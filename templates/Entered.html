@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercise 4</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body></body>
+
+    <div>
+        <form method = "POST">
+            <div>
+            <p> Engineering Discipline: <span class = confirm>You are studying {{discipline}}</span></p>
+            <input type = "text" class = "form-control" placeholder="Type Degree" id = "discipline" name = "discipline">
+            
+            <p>Years Studied: <span class = confirm>You've been studying for {{years}} years</span></p>
+        </div><input type = "number" class = "form-control" placeholder="Type a Number" id = "years" name = "years">
+
+            <div>
+                <input type="submit" value = "Submit" class ="button">
+            </div>
+        </form>       
+    </div>
+
+    
+    <img src="{{ url_for('static', filename='images/eng.jpg') }}" width="500" height="300">
+    
+</body>
+
+<footer> 
+    <p> INFO 4160</p>
+</footer>
+</html>
